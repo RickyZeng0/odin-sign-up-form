@@ -10,7 +10,10 @@
 
 .left{
     background: url(blacksoul.png);
+    /*to see the full image fillup the screen*/
     background-size: cover;
+    /*to avoid it being push by the description */
+    flex-shrink: 0;
     width: 40%;
 }
 
@@ -30,3 +33,72 @@
     gap: 2em;
     align-items: center;
 }
+
+.right{
+    background-color: rgb(247, 245, 245);
+}
+
+.description,.information,.handin{
+    /*Then all element on the right has the same seperation to the left*/
+    padding-left: 4%;
+}
+
+.description{
+    font-size: large;
+    margin-top: 6%;
+}
+
+.information{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    /*For 2D alignment*/
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-div{
+    width: 35%;
+}
+
+.left-div{
+    margin-right: 3em;
+}
+
+label{
+    display: block;
+    color: rgb(84, 84, 84);
+}
+
+input{
+    /*It should be the same width as the div, otherwise it will alway keep its default width*/
+    width: 100%;
+    /*outline can't be round so don't use it*/
+    outline: none;
+    border: solid 1px rgb(161, 160, 160);
+    border-radius: 8px;
+}
+
+input:focus,input:focus-visible{
+    /*the outline cover the border so we can't see the change*/
+    outline: none;
+    border:solid 1px blue;
+}
+
+input:invalid{
+    border:solid 1px red;
+}
+
+button{
+    margin-top: 40px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
