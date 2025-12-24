@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "lolita";
+    src: url(lolita.ttf);
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    background: url(blacksoul.png);
+    background-size: cover;
+    width: 40%;
+}
+
+.sidebar{
+    /* position and size of the sidebar */
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+    box-sizing: border-box;
+    height: 10%;
+
+    /* adjust the word inside the sidebar */
+    font-family: 'lolita';
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}
